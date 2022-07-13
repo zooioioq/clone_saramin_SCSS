@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-    <link rel="stylesheet" href="../css/package.css">
+    <link rel="stylesheet" href="../scss/package.css">
     <script src="../js/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
@@ -20,146 +20,148 @@
     <div class="wrap">
       <!-- header -->
       <header class="header">
-        <!-- heading -->
-        <h1 class="heading"></h1>
-        <!-- // heading -->
-        <!-- searchBox -->
-        <div class="searchBox">
-          <form>
-            <fieldset>
-              <input type="text" placeholder="'판교' 지역을 검색해보세요">
-              <!-- act 상태에서 상세 검색 내용 표시 예정 -->
-            </fieldset>
-          </form>
-        </div>
-        <!-- // searchBox -->
-        <!-- userBox -->
-        <div class="userBox">
-          <ul>
-            <li> 로그인 </li>
-            <li> 회원가입 </li>
-          </ul>
-        </div>
-        <!-- // userBox -->
-        <!-- nav -->
-        <nav class="nav">
-          <!-- navCategory -->
-          <ul class="navCategory">
-            <li><a href="#"> 채용정보 </a></li>
-            <li><a href="#"> 신입공채 </a></li>
-            <li><a href="#"> 기업 · 연봉정보 </a></li>
-            <li><a href="#"> 이직제안 </a></li>
-            <li><a href="#"> 인적성 · 면접 </a></li>
-            <li><a href="#"> 합격 </a></li>
-            <li><a href="#"> 프리랜서 · N잡 </a></li>
-          </ul>
-          <!-- // navCategory -->
-          <!-- navDetailBtn -->
-          <button type="button" class="navDetailBtn"></button>
-          <!-- // navDetailBtn -->
-          <!-- otherLink -->
-          <ul class="otherLink">
-            <li><a href="#"> 커뮤니티 </a></li>
-            <li><a href="#"> 콘텐츠 </a></li>
-            <li><a href="#"><img src="" alt="점프잇"></a></li>
-          </ul>
-          <!-- // otherLink -->
-          <!-- navDetail -->
-          <div class="navDetail">
-            <!-- navMenu -->
-            <ul class="navMenu">
-              <li>
-                <dl>
-                  <dt><a href="#"> 채용정보 </a></dt>
-                  <dd><a href="#"> 지역별 </a></dd>
-                  <dd><a href="#"> 직업별 </a></dd>
-                  <dd><a href="#"> HOT100 </a></dd>
-                  <dd><a href="#"> 큐레이션 </a></dd>
-                  <dd><a href="#"> 신입공채 </a></dd>
-                  <dd><a href="#"> 산업별 </a></dd>
-                  <dd><a href="#"> 헤드헌팅 </a></dd>
-                  <dd><a href="#"> 파견대행 </a></dd>
-                  <dd><a href="#"> 채용관 </a></dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt><a href="#"> 기업 · 연봉정보</a></dt>
-                  <dd><a href="#"> 기업리뷰 </a></dd>
-                  <dd><a href="#"> 면접후기 </a></dd>
-                  <dd><a href="#"> 연봉정보 </a></dd>
-                  <dd><a href="#"> 기업큐레이션 </a></dd>
-                  <dd><a href="#"> 이직로드맵 </a></dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt><a href="#"> 인재풀 </a></dt>
-                  <dd class="individual"><a href="#"> 받은 제안 현황 </a></dd>
-                  <dd class="individual"><a href="#"> 이력서 열람 현황 </a></dd>
-                  <dd class="individual"><a href="#"> 제안받기 설정 </a></dd>
-                  <dd class="business"><a href="#"> 인재풀 검색 </a></dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt><a href="#"> 인적성 · 면접 </a></dt>
-                  <dd><a href="#"> Preview 역량검사 </a></dd>
-                  <dd><a href="#"> 아이엠그라운드 더 레디 </a></dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt><a href="#"> 합격ㅋㅋ </a></dt>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt><a href="#"> 사람인 서비스 </a></dt>
-                  <dd class="individual"><a href="#"> 이력서 관리 </a></dd>
-                  <dd class="business"><a href="#"> 공고지원자 관리 </a></dd>
-                  <dd><a href="#"> 커뮤니티 </a></dd>
-                  <dd class="other"><a href="#"> 콘텐츠 </a></dd>
-                  <dd class="link">
-                    <a href="#">
-                      <img src="" alt="점핏">
-                      <span> 점핏 </span>
-                    </a>
-                  </dd>
-                  <dd class="link">
-                    <a href="#">
-                      <img src="" alt="오투잡">
-                      <span> 오투잡 </span>
-                    </a>
-                  </dd>
-                  <dd class="link">
-                    <a href="#">
-                      <img src="" alt="아이엠그라운드 더 레디">
-                      <span> 아이엠그라운드 더 레디 </span>
-                    </a>
-                  </dd>
-                  <dd class="link">
-                    <a href="#">
-                      <img src="" alt="사람인 긱">
-                      <span> 사람인 긱 </span>
-                    </a>
-                  </dd>
-                </dl>
-              </li>
-            </ul>
-            <!-- // navMenu -->
-            <!-- navExtra -->
-            <ul class="navExtra">
-              <li><a href="#"> 고객센터 <span class="small"> 공지/이벤트 </span></a></li>
-              <li><a href="#"> 추천 <span class="small"> 채용공고 </span></a></li>
-              <li><a href="#"> 상품 안내 <span class="small"> 유료서비스 </span></a></li>
-              <li><a href="#"> We.라운지 <span class="small"> 브랜딩 </span></a></li>
-            </ul>
-            <!-- // navExtra -->
+        <div class="headerWrap">
+          <!-- heading -->
+          <h1 class="heading"></h1>
+          <!-- // heading -->
+          <!-- searchBox -->
+          <div class="searchBox">
+            <form>
+              <fieldset>
+                <input type="text" placeholder="'판교' 지역을 검색해보세요">
+                <!-- act 상태에서 상세 검색 내용 표시 예정 -->
+              </fieldset>
+            </form>
           </div>
-          <!-- // navDetail -->
-        </nav>
-        <!-- // nav -->
+          <!-- // searchBox -->
+          <!-- userBox -->
+          <div class="userBox">
+            <ul>
+              <li> 로그인 </li>
+              <li> 회원가입 </li>
+            </ul>
+          </div>
+          <!-- // userBox -->
+          <!-- nav -->
+          <nav class="nav">
+            <!-- navCategory -->
+            <ul class="navCategory">
+              <li><a href="#"> 채용정보 </a></li>
+              <li><a href="#"> 신입공채 </a></li>
+              <li><a href="#"> 기업 · 연봉정보 </a></li>
+              <li><a href="#"> 이직제안 </a></li>
+              <li><a href="#"> 인적성 · 면접 </a></li>
+              <li><a href="#"> 합격 </a></li>
+              <li><a href="#"> 프리랜서 · N잡 </a></li>
+            </ul>
+            <!-- // navCategory -->
+            <!-- navDetailBtn -->
+            <button type="button" class="navDetailBtn"></button>
+            <!-- // navDetailBtn -->
+            <!-- otherLink -->
+            <ul class="otherLink">
+              <li><a href="#"> 커뮤니티 </a></li>
+              <li><a href="#"> 콘텐츠 </a></li>
+              <li><a href="#"><img src="" alt="점프잇"></a></li>
+            </ul>
+            <!-- // otherLink -->
+            <!-- navDetail -->
+            <div class="navDetail">
+              <!-- navMenu -->
+              <ul class="navMenu">
+                <li>
+                  <dl>
+                    <dt><a href="#"> 채용정보 </a></dt>
+                    <dd><a href="#"> 지역별 </a></dd>
+                    <dd><a href="#"> 직업별 </a></dd>
+                    <dd><a href="#"> HOT100 </a></dd>
+                    <dd><a href="#"> 큐레이션 </a></dd>
+                    <dd><a href="#"> 신입공채 </a></dd>
+                    <dd><a href="#"> 산업별 </a></dd>
+                    <dd><a href="#"> 헤드헌팅 </a></dd>
+                    <dd><a href="#"> 파견대행 </a></dd>
+                    <dd><a href="#"> 채용관 </a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a href="#"> 기업 · 연봉정보</a></dt>
+                    <dd><a href="#"> 기업리뷰 </a></dd>
+                    <dd><a href="#"> 면접후기 </a></dd>
+                    <dd><a href="#"> 연봉정보 </a></dd>
+                    <dd><a href="#"> 기업큐레이션 </a></dd>
+                    <dd><a href="#"> 이직로드맵 </a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a href="#"> 인재풀 </a></dt>
+                    <dd class="individual"><a href="#"> 받은 제안 현황 </a></dd>
+                    <dd class="individual"><a href="#"> 이력서 열람 현황 </a></dd>
+                    <dd class="individual"><a href="#"> 제안받기 설정 </a></dd>
+                    <dd class="business"><a href="#"> 인재풀 검색 </a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a href="#"> 인적성 · 면접 </a></dt>
+                    <dd><a href="#"> Preview 역량검사 </a></dd>
+                    <dd><a href="#"> 아이엠그라운드 더 레디 </a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a href="#"> 합격ㅋㅋ </a></dt>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><a href="#"> 사람인 서비스 </a></dt>
+                    <dd class="individual"><a href="#"> 이력서 관리 </a></dd>
+                    <dd class="business"><a href="#"> 공고지원자 관리 </a></dd>
+                    <dd><a href="#"> 커뮤니티 </a></dd>
+                    <dd class="other"><a href="#"> 콘텐츠 </a></dd>
+                    <dd class="link">
+                      <a href="#">
+                        <img src="" alt="점핏">
+                        <span> 점핏 </span>
+                      </a>
+                    </dd>
+                    <dd class="link">
+                      <a href="#">
+                        <img src="" alt="오투잡">
+                        <span> 오투잡 </span>
+                      </a>
+                    </dd>
+                    <dd class="link">
+                      <a href="#">
+                        <img src="" alt="아이엠그라운드 더 레디">
+                        <span> 아이엠그라운드 더 레디 </span>
+                      </a>
+                    </dd>
+                    <dd class="link">
+                      <a href="#">
+                        <img src="" alt="사람인 긱">
+                        <span> 사람인 긱 </span>
+                      </a>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <!-- // navMenu -->
+              <!-- navExtra -->
+              <ul class="navExtra">
+                <li><a href="#"> 고객센터 <span class="small"> 공지/이벤트 </span></a></li>
+                <li><a href="#"> 추천 <span class="small"> 채용공고 </span></a></li>
+                <li><a href="#"> 상품 안내 <span class="small"> 유료서비스 </span></a></li>
+                <li><a href="#"> We.라운지 <span class="small"> 브랜딩 </span></a></li>
+              </ul>
+              <!-- // navExtra -->
+            </div>
+            <!-- // navDetail -->
+          </nav>
+          <!-- // nav -->
+        </div>
       </header>
       <!-- // header -->
 
@@ -167,7 +169,7 @@
       <aside class="aside">
         <!-- sideNav -->
         <ul class="sideNav">
-          <li><a href="#"> 공고찾기 </a></li>
+          <li><a href="#" class="act"> 공고찾기 </a></li>
           <li><a href="#"> 추천공고 </a></li>
           <li><a href="#"> 주요채용 </a></li>
           <li><a href="#"> 글자수세기 </a></li>

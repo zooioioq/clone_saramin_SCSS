@@ -1,0 +1,173 @@
+/* reset */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, address, ul, ol, li, dl, dt, dd, img, br, hr, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header, nav, section, article, footer, aside, main, figure, figcaption {
+  display: block;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+input, select {
+  outline: none;
+}
+
+/* function */
+.blind {
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+.wrap {
+  background-color: #FBFBFB;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1260px;
+  height: auto;
+  margin: 20px auto 0 auto;
+}
+
+.header .nav {
+  display: none;
+}
+
+/* aside */
+.aside {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  margin-left: 650px;
+}
+
+.aside .sideNav {
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.aside .sideNav li {
+  padding-left: 16px;
+  margin-bottom: 10px;
+}
+
+.aside .sideNav li a {
+  position: relative;
+  font-size: 11px;
+  color: #666;
+}
+
+.aside .sideNav li a::after {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+
+.aside .sideNav li a::before {
+  position: absolute;
+  left: -13.5px;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 1px;
+  height: calc(100% + 13px);
+  background-color: #ccc;
+}
+
+.aside .sideNav li a:hover {
+  color: #4672ff;
+}
+
+.aside .sideNav li a.act {
+  color: #4672ff;
+}
+
+.aside .sideNav li a.act::after {
+  background-color: #4672ff;
+}
+
+.aside .sideNav li:last-child a::before {
+  display: none;
+}
+
+.aside .topBtn {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  color: #767676;
+  font-size: 11px;
+  background-color: #fff;
+}
+/*# sourceMappingURL=package.css.map */
